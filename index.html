@@ -8,9 +8,8 @@
     <script src="https://kit.fontawesome.com/46093d6067.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="../CV numérique/assets/css/hover-min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Pierre Fardel CV</title>
 </head>
@@ -65,8 +64,7 @@
     </div>
     <!-- STUDIE & WORK EXP -->
     <div id="studieWorkCtn">
-
-        <div id="studieCtn" class="studieInvisible">
+        <div id="studieCtn" class="studieInvisible" data-aos="zoom-in" data-aos-duration="1000">
             <div id="studieTitleCtn">
                 <h4 id="studieTitle">STUDIES<i class="fas fa-university"></i></h4>
             </div>
@@ -82,7 +80,7 @@
                 </p>
             </div>
         </div>
-        <div id="workCtn" class="workInvisible">
+        <div id="workCtn" class="workInvisible" data-aos="zoom-in" data-aos-duration="1000">
             <div id='workTitleCtn'>
                 <h4 id='workTitle'>WORK EXPERIENCES<i class="fas fa-briefcase"></i></h4>
             </div>
@@ -109,41 +107,22 @@
                 </ul>
             </div>
         </div>
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- SKILLS -->
     <div id="skillsCtn">
-
-        <div id="technicalSkillsCtn">
+        <div id="skillsTitleCtn" data-aos="zoom-in">
+            <div id=skillsTitle>SKILLS</div>
+        </div>
+        <div id="technicalSkillsCtn" data-aos="fade-up">
             <div id="technicalSkillsBtn"><i class="fas fa-tools disparition"></i>
             </div>
         </div>
-        <div id="languagesCtn">
+        <div id="languagesCtn" data-aos="fade-up" data-aos-duration="1000">
             <div id="languagesBtn"><i class="fas fa-code show2"></i><i class="fab fa-html5 unshow"></i><i class="fab fa-js-square unshow"></i><i class="fab fa-css3-alt unshow"></i><i class="fab fa-wordpress unshow"></i><i class="fab fa-bootstrap unshow "></i></div>
         </div>
-        <div id="softSkillsCtn">
+        <div id="softSkillsCtn" data-aos="fade-up">
             <div id="softSkillsBtn"><i class="fas fa-brain"></i></div>
         </div>
-
-
-
     </div>
     <!-- PROJECTS -->
     <div id="projectCtn">
@@ -156,17 +135,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <!-- CONTACT PART -->
     <!-- CONTACT TITLE -->
     <div id="contactContainer">
@@ -177,7 +145,7 @@
             </a>
         </div>
         <!-- PHONE BTN -->
-        <div id="phoneCtn" class="animate__animated animate__bounceIn">
+        <div id="phoneCtn" data-aos="flip-up" data-aos-duration="1500">
             <a href="tel:0621194287" id="linkPhone">
                 <div id="phoneBtn" class="hvr-icon-push"><i class="fas fa-mobile hvr-icon" id="iconPhone"></i><span class="unshow" id='phoneNumber'>06 21 19 42 87</span></div>
             </a>
@@ -196,15 +164,15 @@
         </div>
         <!-- TRIANGLES -->
         <div id="triangle3Ctn">
-            <div id="triangle3"></div>
+            <div id="triangle3" data-aos="fade-right"></div>
         </div>
 
         <div id="triangle4Ctn">
-            <div id="triangle4"></div>
+            <div id="triangle4" data-aos="fade-down"></div>
         </div>
 
         <div id="triangle5Ctn">
-            <div id="triangle5"></div>
+            <div id="triangle5" data-aos="fade-left"></div>
         </div>
         <!-- SOCIAL LINKS -->
         <div id="socialCtn">
@@ -216,16 +184,11 @@
             <a href="https://github.com/Pfrdl" target="_blank" class="linkSocial hvr-icon-grow"><i
                     class="fab fa-github-square hvr-icon"></i></a>
         </div>
-
-
     </div>
-
-
-
-
-
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./script.js"></script>
 </body>
 

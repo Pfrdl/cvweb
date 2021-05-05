@@ -392,7 +392,7 @@
         #skillsCtn {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 950px;
+            grid-template-rows: 80px 950px;
             margin-top: 0 auto;
             background: rgb(42, 50, 75);
             background: linear-gradient(0deg, rgba(42, 50, 75, 1) 0%, rgba(135, 187, 162, 1) 100%);
@@ -408,8 +408,7 @@
         #skillsTitle {
             border-radius: 5px;
             color: #EEEFF2;
-            font-size: 3em;
-            background-color: #2A324B;
+            font-size: 4em;
             font-weight: bold;
             padding: 5px 10px;
         }
