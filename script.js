@@ -1,163 +1,196 @@
-// Scroll presentation
-const nav = document.querySelector('.reveal');
+$(document).ready(function() {
+    // Scroll presentation
+    const nav = document.querySelector('.reveal');
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
-    if (window.scrollY > 150) {
+        if (window.scrollY > 150) {
 
-        nav.classList.add('reveal-visible');
+            nav.classList.add('reveal-visible');
 
 
-    } else {
+        } else {
 
-        nav.classList.remove('reveal-visible')
-    }
+            nav.classList.remove('reveal-visible')
+        }
 
 
 
-})
+    })
 
-const nav2 = document.querySelector('.reveal1');
+    const nav2 = document.querySelector('.reveal1');
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
 
-    if (window.scrollY > 150) {
+        if (window.scrollY > 150) {
 
-        nav2.classList.add('reveal-visible1');
+            nav2.classList.add('reveal-visible1');
 
-    } else {
+        } else {
 
-        nav2.classList.remove('reveal-visible1')
-    }
-})
+            nav2.classList.remove('reveal-visible1')
+        }
+    })
 
 
 
-const nav3 = document.querySelector('.reveal2');
+    const nav3 = document.querySelector('.reveal2');
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
 
-    if (window.scrollY > 200) {
+        if (window.scrollY > 200) {
 
-        nav3.classList.add('reveal-visible2');
+            nav3.classList.add('reveal-visible2');
 
-    } else {
+        } else {
 
-        nav3.classList.remove('reveal-visible2')
-    }
-})
+            nav3.classList.remove('reveal-visible2')
+        }
+    })
 
-const nav4 = document.querySelector('.reveal3');
+    const nav4 = document.querySelector('.reveal3');
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
 
-    if (window.scrollY > 200) {
+        if (window.scrollY > 200) {
 
-        nav4.classList.add('reveal-visible3');
+            nav4.classList.add('reveal-visible3');
 
-    } else {
+        } else {
 
-        nav4.classList.remove('reveal-visible3')
-    }
-})
+            nav4.classList.remove('reveal-visible3')
+        }
+    })
 
-// Scroll Studie & Work 
+    // Scroll Studie & Work 
 
-const studieScroll = document.querySelector('.studieInvisible')
+    const studieScroll = document.querySelector('.studieInvisible')
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
-    if (window.scrollY > 1250) {
+        if (window.scrollY > 1250) {
 
-        studieScroll.classList.add('studieVisible');
+            studieScroll.classList.add('studieVisible');
 
-    } else {
+        } else {
 
-        studieScroll.classList.remove('studieVisible');
-    }
-})
+            studieScroll.classList.remove('studieVisible');
+        }
+    })
 
-const workScroll = document.querySelector('.workInvisible')
+    const workScroll = document.querySelector('.workInvisible')
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
 
-    if (window.scrollY > 1250) {
+        if (window.scrollY > 1250) {
 
-        workScroll.classList.add('workVisible');
+            workScroll.classList.add('workVisible');
 
-    } else {
+        } else {
 
-        workScroll.classList.remove('workVisible');
-    }
-})
+            workScroll.classList.remove('workVisible');
+        }
+    })
 
 
 
 
+    // SKILLS 
+    $('.show2').click(function() {
 
+        $('.show2').hide();
+        $('.unshow').addClass('show');
 
 
 
 
+    })
 
+    $('#languagesBtn').hover(function() {
 
+        $('.show2').show();
+        $('.unshow').removeClass('show');
 
+    })
 
+    $('.unshow').click(function() {
 
 
-// skills
-const languagesBtn = document.getElementById('languagesBtn');
-const languagesIcn = document.querySelector('.show2');
-const icons = document.querySelector('.unshow');
+        $('.show2').show();
+        $('.unshow').removeClass('show');
 
-languagesIcn.addEventListener('click', () => {
 
-    icons.classList.remove('unshow');
-    icons.classList.add('.show');
-    languagesIcn.classList.add('unshow');
+    })
 
 
 
 
 
-})
 
-icons.addEventListener('click', () => {
 
-    icons.classList.add('unshow');
-    icons.classList.remove('.show');
-    languagesIcn.classList.remove('unshow');
+    // PHONE BTN
 
+    const phoneNumber = document.getElementById('phoneNumber');
+    const iconPhone = document.getElementById('iconPhone')
 
-})
+    iconPhone.addEventListener('click', () => {
 
+        phoneNumber.classList.add('phoneNumber');
+        iconPhone.classList.add('hideBtn');
 
 
 
 
+    })
 
-// PHONE BTN
+    phoneNumber.addEventListener('click', () => {
 
-const phoneNumber = document.getElementById('phoneNumber');
-const phoneCtn = document.getElementById('phoneBtn');
-const iconPhone = document.getElementById('iconPhone')
+        phoneNumber.classList.remove('phoneNumber');
+        iconPhone.classList.remove('hideBtn');
 
-iconPhone.addEventListener('click', () => {
+    })
 
-    phoneNumber.classList.add('phoneNumber');
-    iconPhone.classList.add('hideBtn');
+    // DARKMODE 
 
+    $('#darkModeBtn').click(function() {
 
+        $('.citationBloc').removeAttr('id');
+        $('.citationBloc').addClass('displayDark');
+        $('#subtitle').css('color', '#C97064');
+        $('.linkHead').css('background-color', '#C97064');
 
 
-})
 
-phoneNumber.addEventListener('click', () => {
 
-    phoneNumber.classList.remove('phoneNumber');
-    iconPhone.classList.remove('hideBtn');
+    })
+
+    $('.displayBtnDark').click(function() {
+
+        $('.citationBloc').Attr('id');
+        $('.citationBloc').removeClass('displayDark');
+        $('#subtitle').css('color', '#C97064');
+
+
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })

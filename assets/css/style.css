@@ -117,6 +117,17 @@
             background: rgb(42, 50, 75);
             background: linear-gradient(0deg, rgba(42, 50, 75, 1) 0%, rgba(135, 187, 162, 1) 100%);
         }
+        /* darkmode */
+        
+        .displayDark {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 250px 250px;
+            height: 500px;
+            margin-top: 60px;
+            background: rgb(201, 112, 100);
+            background: linear-gradient(180deg, rgba(201, 112, 100, 1) 0%, rgba(42, 50, 75, 1) 100%);
+        }
         
         #triangle1Display {
             margin-left: 100px;
@@ -352,6 +363,11 @@
             text-underline-position: under;
         }
         
+        .subtitleStudie {
+            color: #EEEFF2;
+            font-size: 1.2em;
+        }
+        
         .fa-university,
         .fa-briefcase {
             margin-left: 10px;
@@ -386,6 +402,7 @@
         
         .titleBloc {
             font-weight: bold;
+            font-size: 1.5em;
         }
         /* SKILLS */
         
@@ -434,6 +451,12 @@
             flex-direction: column;
         }
         
+        .fa-tools:hover,
+        .fa-code:hover,
+        .fa-brain:hover {
+            cursor: pointer;
+        }
+        
         .fa-tools,
         .fa-code,
         .fa-brain {
@@ -460,8 +483,23 @@
         }
         
         .fa-html5 {
-            color: #2A324B;
-            font-size: 3em;
+            color: #C97064;
+        }
+        
+        .fa-js-square {
+            color: #f0db4f;
+        }
+        
+        .fa-css3-alt {
+            color: #264de4;
+        }
+        
+        .fa-wordpress {
+            color: #00749C;
+        }
+        
+        .fa-bootstrap {
+            color: #563d7c;
         }
         /* SOFT SKILLS */
         
@@ -481,7 +519,7 @@
             align-items: center;
             justify-content: center;
         }
-        /* SKILLS HOVER & EFFECTS */
+        /* SKILLS HOVER & EFFECTS JS */
         
         #languagesBtn:hover,
         #technicalSkillsBtn:hover,
@@ -497,9 +535,11 @@
         }
         
         .show {
+            margin-right: 5px;
             display: block;
-            font-size: 3em;
-            transition: 0.2s ease-in-out all;
+            font-size: 2.5em;
+            transition: 0.1s ease-in-out all;
+            cursor: pointer;
         }
         /* PROJETCS */
         
@@ -599,6 +639,10 @@
         }
         
         .hideBtn {
+            display: none;
+        }
+        
+        .cache {
             display: none;
         }
         

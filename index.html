@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="../CV numérique/assets/css/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Pierre Fardel CV</title>
+    <title>Pierre Fardel</title>
 </head>
 
 <body>
     <div id="containerDarkMode">
-        <div id="darkModeBtn"><a href="#" id="linkDarkMode" class="hvr-icon-spin"><i
-                    class="fas fa-moon hvr-icon"></i></a></div>
+        <div id="darkModeBtn" class="displayBtnDark"><a href="#" id="linkDarkMode" class="hvr-icon-spin"><i class="fas fa-adjust hvr-icon"></i></a></div>
     </div>
     <header>
         <!-- navbar -->
@@ -37,7 +36,7 @@
         </div>
     </header>
     <!-- citation bloc -->
-    <div id="citationBloc">
+    <div id="citationBloc" class="citationBloc">
         <div id="triangle1Display"></div>
         <div id="citationContainer">
             <p id="citationText">"LESS IS MORE"</p>
@@ -70,12 +69,12 @@
             </div>
             <div>
                 <P class="titleBloc">Formation in WebDesign & Digital Communication</P>
-                <P>La Manu - Amiens | March 2021 - Now</P>
+                <P class="subtitleStudie">La Manu - Amiens | March 2021 - Now</P>
                 <P>Professional formation and Bac + 2 certification in order to acquire skills in web development and digital communication. Preparation for obtaining the professional title of WebDesigner.</P>
             </div>
             <div>
                 <P class="titleBloc">Bachelor of Psychology</P>
-                <p>University of Picardie Jules Verne - Amiens | 2015 to 2018</p>
+                <p class="subtitleStudie">University of Picardie Jules Verne - Amiens | 2015 to 2018</p>
                 <p>Study of the different notions and aspects of contemporary psychology. Diploma obtained with honors.
                 </p>
             </div>
@@ -86,7 +85,7 @@
             </div>
             <div>
                 <p class="titleBloc">Seller</p>
-                <p>Table & Saveurs - Amiens | Dec 2019 & Dec 2020</p>
+                <p class="subtitleStudie">Table & Saveurs - Amiens | Dec 2019 & Dec 2020</p>
                 <ul class="listeWork">
                     <li>Customer advice and sales</li>
                     <li>Order preparation</li>
@@ -97,7 +96,7 @@
             </div>
             <div>
                 <p class="titleBloc">Civic Service</p>
-                <p>Cultural Center Leo Lagrange - Amiens | Sept 2018 to June 2019</p>
+                <p class="subtitleStudie">Cultural Center Leo Lagrange - Amiens | Sept 2018 to June 2019</p>
                 <ul class="listeWork">
                     <li>Events organization</li>
                     <li>Communciation and public relations</li>
@@ -113,15 +112,16 @@
         <div id="skillsTitleCtn" data-aos="zoom-in">
             <div id=skillsTitle>SKILLS</div>
         </div>
-        <div id="technicalSkillsCtn" data-aos="fade-up">
-            <div id="technicalSkillsBtn"><i class="fas fa-tools disparition"></i>
+        <div id="technicalSkillsCtn">
+            <div id="technicalSkillsBtn" data-aos="fade-up"><i data-aos="zoom-in" class="fas fa-tools disparition"></i>
             </div>
         </div>
-        <div id="languagesCtn" data-aos="fade-up" data-aos-duration="1000">
-            <div id="languagesBtn"><i class="fas fa-code show2"></i><i class="fab fa-html5 unshow"></i><i class="fab fa-js-square unshow"></i><i class="fab fa-css3-alt unshow"></i><i class="fab fa-wordpress unshow"></i><i class="fab fa-bootstrap unshow "></i></div>
+        <div id="languagesCtn">
+            <div id="languagesBtn" data-aos="fade-up" data-aos-duration="1000" class="hvr-icon-push"><i data-aos="zoom-in" class="fas fa-code show2"></i><i class="fab fa-html5 unshow hvr-icon"></i><i class="fab fa-js-square unshow hvr-icon"></i><i class="fab fa-css3-alt unshow hvr-icon"></i>
+                <i class="fab fa-wordpress unshow hvr-icon"></i><i class="fab fa-bootstrap unshow hvr-icon"></i></div>
         </div>
         <div id="softSkillsCtn" data-aos="fade-up">
-            <div id="softSkillsBtn"><i class="fas fa-brain"></i></div>
+            <div id="softSkillsBtn" data-aos="fade-up"><i data-aos="zoom-in" class="fas fa-brain"></i></div>
         </div>
     </div>
     <!-- PROJECTS -->
@@ -145,42 +145,40 @@
             </a>
         </div>
         <!-- PHONE BTN -->
-        <div id="phoneCtn" data-aos="flip-up" data-aos-duration="1500">
+        <div id="phoneCtn" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor="#triangle3">
             <a href="tel:0621194287" id="linkPhone">
-                <div id="phoneBtn" class="hvr-icon-push"><i class="fas fa-mobile hvr-icon" id="iconPhone"></i><span class="unshow" id='phoneNumber'>06 21 19 42 87</span></div>
+                <div id="phoneBtn" class="hvr-icon-push"><i class="fas fa-mobile hvr-icon" id="iconPhone"></i><span class="cache" id='phoneNumber'>06 21 19 42 87</span></div>
             </a>
         </div>
         <!-- MAIL BTN -->
-        <div id="mailCtn">
+        <div id="mailCtn" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor="#triangle3">
             <a href="mailto:pierre.fardel19@gmail.com" id="linkMail">
                 <div id="mailBtn" class="hvr-icon-push"><i class="fas fa-envelope hvr-icon"></i></div>
             </a>
         </div>
         <!-- LOCATION BTN -->
-        <div id="locationCtn">
+        <div id="locationCtn" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor="#triangle3">
             <a href="https://www.google.fr/maps/place/Amiens/@49.8986514,2.214598,12z/data=!3m1!4b1!4m5!3m4!1s0x47e78413d78b760b:0x40af13e816220e0!8m2!3d49.894067!4d2.295753" target="_blank" id="linkLocation">
                 <div id="locationBtn" class="hvr-icon-push"><i class="fas fa-map-signs hvr-icon"></i></div>
             </a>
         </div>
         <!-- TRIANGLES -->
         <div id="triangle3Ctn">
-            <div id="triangle3" data-aos="fade-right"></div>
+            <div id="triangle3"></div>
         </div>
 
         <div id="triangle4Ctn">
-            <div id="triangle4" data-aos="fade-down"></div>
+            <div id="triangle4"></div>
         </div>
 
         <div id="triangle5Ctn">
-            <div id="triangle5" data-aos="fade-left"></div>
+            <div id="triangle5"></div>
         </div>
         <!-- SOCIAL LINKS -->
         <div id="socialCtn">
             <a href="https://www.linkedin.com/in/pierre-fardel-4bb0661a1/" target="_blank" class="linkSocial hvr-icon-grow"><i class="fab fa-linkedin hvr-icon"></i></a>
             <a href="https://www.instagram.com/fierrepardel/" target="_blank" class="linkSocial hvr-icon-grow"><i
                     class="fab fa-instagram hvr-icon"></i></a>
-            <a href="https://www.facebook.com/FardelPierre/" target="_blank" class="linkSocial hvr-icon-grow"><i
-                    class="fab fa-facebook-square hvr-icon"></i></a>
             <a href="https://github.com/Pfrdl" target="_blank" class="linkSocial hvr-icon-grow"><i
                     class="fab fa-github-square hvr-icon"></i></a>
         </div>
@@ -189,6 +187,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 
