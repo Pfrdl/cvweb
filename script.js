@@ -187,29 +187,15 @@ $(document).ready(function() {
 
     // DARKMODE 
 
-    $('#darkModeBtn').click(function() {
 
-        $('.citationBloc').removeAttr('id');
-        $('.citationBloc').addClass('displayDark');
-        $('#subtitle').css('color', '#C97064');
-        $('.linkHead').css('background-color', '#C97064');
+    let darkMode = $('#darkMode')
 
+    darkMode.click(function() {
 
+        document.body.classList.toggle('dark');
 
 
     })
-
-    $('.displayBtnDark').click(function() {
-
-        $('.citationBloc').Attr('id');
-        $('.citationBloc').removeClass('displayDark');
-        $('#subtitle').css('color', '#C97064');
-
-
-
-
-    })
-
 
 
 
