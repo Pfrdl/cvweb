@@ -102,7 +102,7 @@
         
         .linkHead:hover {
             background-color: #87BBA2;
-            color: #FFFFFF;
+            color: #EEEFF2;
             border-radius: 5px;
             transition: 0.3s;
         }
@@ -444,13 +444,51 @@
             width: 400px;
             height: 400px;
             border-radius: 50%;
-            background-color: #EEEFF2;
+            background-color: #2A324B;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
         }
         
+        .afterEffect {
+            color: #393665;
+        }
+        
+        .inDesign {
+            color: #562F44;
+        }
+        
+        .illustrator {
+            color: #FF9B00;
+        }
+        
+        .photoShop {
+            color: #3C327B;
+        }
+        
+        .xd {
+            color: #FF61F6;
+        }
+        
+        .premierePro {
+            color: #9999FF;
+        }
+        /* TECHNICAL SKILLS JS */
+        
+        .adobe {
+            display: block;
+            font-size: 1.9em;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 2px;
+        }
+        
+        .adobeUnshow {
+            display: none;
+        }
+        /* BIG ICONS SKILLS */
+        
+        .iconify:hover,
         .fa-tools:hover,
         .fa-code:hover,
         .fa-brain:hover {
@@ -460,7 +498,7 @@
         .fa-tools,
         .fa-code,
         .fa-brain {
-            color: #2A324B;
+            color: #EEEFF2;
             font-size: 7em;
         }
         /* LANGUAGES SKILLS */
@@ -476,7 +514,7 @@
             width: 400px;
             height: 400px;
             border-radius: 50%;
-            background-color: #EEEFF2;
+            background-color: #2A324B;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -501,6 +539,10 @@
         .fa-bootstrap {
             color: #563d7c;
         }
+        
+        .jquery {
+            color: #4f81bd;
+        }
         /* SOFT SKILLS */
         
         #softSkillsCtn {
@@ -514,7 +556,7 @@
             width: 400px;
             height: 400px;
             border-radius: 50%;
-            background-color: #EEEFF2;
+            background-color: #2A324B;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -537,7 +579,7 @@
         .show {
             margin-right: 5px;
             display: block;
-            font-size: 2.5em;
+            font-size: 2.2em;
             transition: 0.1s ease-in-out all;
             cursor: pointer;
         }

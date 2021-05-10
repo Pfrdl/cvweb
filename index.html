@@ -18,7 +18,8 @@
 
 <body>
     <div id="containerDarkMode">
-        <div id="darkModeBtn" class="displayBtnDark"><a href="#" id="linkDarkMode" class="hvr-icon-spin"><i class="fas fa-adjust hvr-icon"></i></a></div>
+        <div id="darkModeBtn" class="displayBtnDark"><a href="#" id="linkDarkMode" class="hvr-icon-spin"><i
+                    class="fas fa-adjust hvr-icon"></i></a></div>
     </div>
     <header>
         <!-- navbar -->
@@ -115,15 +116,20 @@
             <div id=skillsTitle>SKILLS</div>
         </div>
         <div id="technicalSkillsCtn">
-            <div id="technicalSkillsBtn" data-aos="fade-up"><i data-aos="zoom-in" class="fas fa-tools disparition"></i>
+            <div id="technicalSkillsBtn" data-aos="fade-up" class="hvr-icon-push"><i data-aos="zoom-in" class="fas fa-tools techHide"></i><span class="iconify adobeUnshow afterEffect hvr-icon" data-icon="file-icons:adobe-aftereffects" data-inline="false"></span>
+                <span class="iconify adobeUnshow inDesign hvr-icon" data-icon="file-icons:adobe-indesign" data-inline="false"></span><span class="iconify adobeUnshow illustrator hvr-icon" data-icon="file-icons:adobe-illustrator" data-inline="false"></span>
+                <span class="iconify adobeUnshow photoShop hvr-icon" data-icon="file-icons:adobe-photoshop" data-inline="false"></span><span class="iconify adobeUnshow xd hvr-icon" data-icon="file-icons:adobe-xd" data-inline="false"></span><span class="iconify adobeUnshow premierePro hvr-icon"
+                    data-icon="file-icons:adobe-premiere" data-inline="false"></span>
+            </div>
+        </div>
+        <div id="softSkillsCtn" data-aos="fade-up" data-aos-duration="1000">
+            <div id="softSkillsBtn" data-aos="fade-up"><i data-aos="zoom-in" class="fas fa-brain"></i>
             </div>
         </div>
         <div id="languagesCtn">
-            <div id="languagesBtn" data-aos="fade-up" data-aos-duration="1000" class="hvr-icon-push"><i data-aos="zoom-in" class="fas fa-code show2"></i><i class="fab fa-html5 unshow hvr-icon"></i><i class="fab fa-js-square unshow hvr-icon"></i><i class="fab fa-css3-alt unshow hvr-icon"></i>
-                <i class="fab fa-wordpress unshow hvr-icon"></i><i class="fab fa-bootstrap unshow hvr-icon"></i></div>
-        </div>
-        <div id="softSkillsCtn" data-aos="fade-up">
-            <div id="softSkillsBtn" data-aos="fade-up"><i data-aos="zoom-in" class="fas fa-brain"></i></div>
+            <div id="languagesBtn" data-aos="fade-up" class="hvr-icon-push"><i data-aos="zoom-in" class="fas fa-code show2"></i><i class="fab fa-html5 unshow hvr-icon"></i><i class="fab fa-css3-alt unshow hvr-icon"></i><i class="fab fa-js-square unshow hvr-icon"></i>
+                <i class="fab fa-bootstrap unshow hvr-icon"></i><i class="fab fa-wordpress unshow hvr-icon"></i><span class="iconify jquery unshow hvr-icon" data-icon="simple-icons:jquery" data-inline="false"></span>
+            </div>
         </div>
     </div>
     <!-- PROJECTS -->
@@ -185,6 +191,8 @@
                     class="fab fa-github-square hvr-icon"></i></a>
         </div>
     </div>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

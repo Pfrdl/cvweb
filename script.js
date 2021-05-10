@@ -95,35 +95,67 @@ $(document).ready(function() {
         }
     })
 
+    // TECHNICAL SKILLS
+    $('.techHide').click(function() {
 
 
+        $('.techHide').hide();
+        $('.adobeUnshow').addClass('adobe');
+        $('.adobeUnshow').removeClass('adobeUnshow');
+        $('#technicalSkillsBtn').css('background-color', '#EEEFF2')
 
-    // SKILLS 
+    })
+
+    $('.adobe').click(function() {
+
+        $('.techHide').show();
+        $('.adobe').addClass('adobeUnshow')
+        $('.adobeUnshow').removeClass('adobe')
+        $('#technicalSkillsBtn').css('background-color', '#2A324B')
+
+
+    })
+    $('#technicalSkillsBtn').hover(function() {
+
+
+        $('.techHide').show();
+        $('.adobe').addClass('adobeUnshow')
+        $('.adobeUnshow').removeClass('adobe')
+        $('#technicalSkillsBtn').css('background-color', '#2A324B');
+
+    })
+
+
+    // LANGUAGES SKILLS 
     $('.show2').click(function() {
 
         $('.show2').hide();
         $('.unshow').addClass('show');
-
-
+        $('#languagesBtn').css('background-color', '#EEEFF2')
 
 
     })
-
     $('#languagesBtn').hover(function() {
 
         $('.show2').show();
         $('.unshow').removeClass('show');
+        $('#languagesBtn').css('background-color', '#2A324B');
 
     })
-
     $('.unshow').click(function() {
 
 
         $('.show2').show();
         $('.unshow').removeClass('show');
-
+        $('#languagesBtn').css('background-color', '#2A324B')
 
     })
+
+    // SOFT SKILLS
+
+
+
+
 
 
 
