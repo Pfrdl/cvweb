@@ -150,6 +150,67 @@
             background: rgb(201, 112, 100);
             background: linear-gradient(180deg, rgba(201, 112, 100, 1) 0%, rgba(42, 50, 75, 1) 100%);
         }
+        
+        .dark #projectCtn {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1000px;
+            background: rgb(201, 112, 100);
+            background: linear-gradient(0deg, rgba(201, 112, 100, 1) 0%, rgba(42, 50, 75, 1) 100%);
+        }
+        
+        .dark #contactContainer {
+            display: grid;
+            grid-template-columns: 115px 415px 1fr 281px 248px;
+            grid-template-rows: 200px 300px 450px;
+            background: rgb(201, 112, 100);
+            background: linear-gradient(180deg, rgba(201, 112, 100, 1) 0%, rgba(42, 50, 75, 1) 50%);
+        }
+        
+        .dark #backHomeBtn:hover {
+            color: #C97064;
+        }
+        
+        .dark #phoneBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2A324B;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            color: #BAA9BF;
+            font-size: 5em;
+        }
+        
+        .dark #mailBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2A324B;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            color: #87BBA2;
+            font-size: 5em;
+        }
+        
+        .dark #locationBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2A324B;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            color: #82C0CD;
+            font-size: 5em;
+            border: none;
+        }
+        
+        .dark .linkSocial:hover {
+            color: #C97064;
+        }
         /* navbar */
         
         header {
@@ -678,7 +739,6 @@
             margin-right: 5px;
             display: block;
             font-size: 2.2em;
-            transition: 0.1s ease-in-out all;
             cursor: pointer;
         }
         /* PROJETCS */
@@ -775,7 +835,6 @@
             height: 300px;
             transition: 0.3s;
             font-size: 7em;
-            color: #BAA9BF;
         }
         
         .hideBtn {
@@ -818,7 +877,6 @@
         }
         
         #mailBtn:hover {
-            color: #87BBA2;
             width: 300px;
             height: 300px;
             transition: 0.3s;
@@ -851,7 +909,6 @@
         }
         
         #locationBtn:hover {
-            color: #82C0CD;
             width: 300px;
             height: 300px;
             transition: 0.3s;

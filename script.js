@@ -106,7 +106,7 @@ $(document).ready(function() {
 
     })
 
-    $('.adobe').click(function() {
+    $('.adobeUnshow').click(function() {
 
         $('.techHide').show();
         $('.adobe').addClass('adobeUnshow')
@@ -193,7 +193,6 @@ $(document).ready(function() {
     darkMode.click(function() {
 
         document.body.classList.toggle('dark');
-
 
     })
 
