@@ -153,8 +153,8 @@
         
         .dark #projectCtn {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1000px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 950px;
             background: rgb(201, 112, 100);
             background: linear-gradient(0deg, rgba(201, 112, 100, 1) 0%, rgba(42, 50, 75, 1) 100%);
         }
@@ -745,10 +745,26 @@
         
         #projectCtn {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1000px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 950px;
             background: rgb(135, 187, 162);
             background: linear-gradient(0deg, rgba(135, 187, 162, 1) 0%, rgba(42, 50, 75, 1) 100%);
+        }
+        
+        #projectTitleCtn {
+            grid-column: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        #projectTitle {
+            border-radius: 5px;
+            color: #EEEFF2;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 5px 10px;
         }
         /* CONTACT */
         
