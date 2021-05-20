@@ -746,7 +746,7 @@
         #projectCtn {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 80px 950px;
+            grid-template-rows: 80px 1000px;
             background: rgb(135, 187, 162);
             background: linear-gradient(0deg, rgba(135, 187, 162, 1) 0%, rgba(42, 50, 75, 1) 100%);
         }
@@ -765,6 +765,16 @@
             font-size: 4em;
             font-weight: bold;
             padding: 5px 10px;
+        }
+        
+        #projectCards {
+            grid-column: 1/4;
+            grid-row: 2;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1em;
         }
         /* CONTACT */
         
@@ -963,7 +973,7 @@
             border: 0 solid transparent;
             border-right-width: 225px;
             border-left-width: 225px;
-            border-bottom: 450px solid #87BBA2;
+            border-bottom: 420px solid #87BBA2;
         }
         
         #triangle5Ctn {
