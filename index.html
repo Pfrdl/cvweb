@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
     <link href="./assets/css/hover-min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Pierre Fardel</title>
 </head>
@@ -138,8 +139,44 @@
         <div id="projectTitleCtn" data-aos="zoom-in">
             <div id=projectTitle>PROJECTS</div>
         </div>
-        <div id="projectCards"></div>
+        <div id="projectCardsCtn">
+            <div class="displayCenter">
+                <div class="projectsTitle" data-aos="fade-right">WEB DEVELOPMENT</div>
+            </div>
+            <div class="projectCtnDisplay displayCenter">
+                <div id="webDevButton" data-bs-toggle="modal" data-bs-target="#webDevModal" data-aos="flip-up">
+                </div>
+            </div>
 
+            <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h5 class="modal-title" id="exampleModalLabel">WEB DEVELOPMENT</h5>
+
+                        </div>
+                        <div class="modal-body bodyModal">
+                            <div class="displayCenter">
+                                <div class="textDisplay">HACKATON 2021</div>
+                            </div>
+
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="displayCenter">
+                <div class="projectsTitle" data-aos="fade-left">WEBDESIGN</div>
+            </div>
+            <div class="projectCtnDisplay displayCenter">
+                <div id="webdesignButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="flip-up">
+                </div>
+            </div>
+        </div>
     </div>
     <!-- CONTACT PART -->
     <!-- CONTACT TITLE -->
@@ -189,6 +226,7 @@
                     class="fab fa-github-square hvr-icon"></i></a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

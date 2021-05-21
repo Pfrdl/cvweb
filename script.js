@@ -102,7 +102,7 @@ $(document).ready(function() {
         $('.techHide').hide();
         $('.adobeUnshow').addClass('adobe');
         $('.adobeUnshow').removeClass('adobeUnshow');
-        $('#technicalSkillsBtn').css('background-color', '#EEEFF2')
+
 
     })
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
         $('.techHide').show();
         $('.adobe').addClass('adobeUnshow')
         $('.adobeUnshow').removeClass('adobe')
-        $('#technicalSkillsBtn').css('background-color', '#2A324B')
+
 
 
     })
@@ -121,7 +121,7 @@ $(document).ready(function() {
         $('.techHide').show();
         $('.adobe').addClass('adobeUnshow')
         $('.adobeUnshow').removeClass('adobe')
-        $('#technicalSkillsBtn').css('background-color', '#2A324B');
+
 
     })
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
 
         $('.show2').hide();
         $('.unshow').addClass('show');
-        $('#languagesBtn').css('background-color', '#EEEFF2')
+
 
 
     })
@@ -139,7 +139,7 @@ $(document).ready(function() {
 
         $('.show2').show();
         $('.unshow').removeClass('show');
-        $('#languagesBtn').css('background-color', '#2A324B');
+
 
     })
     $('.unshow').click(function() {
@@ -147,7 +147,7 @@ $(document).ready(function() {
 
         $('.show2').show();
         $('.unshow').removeClass('show');
-        $('#languagesBtn').css('background-color', '#2A324B')
+
 
     })
 
