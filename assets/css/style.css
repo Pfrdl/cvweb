@@ -752,8 +752,6 @@
         .projectCtnDisplay {
             grid-row: 2;
             display: flex;
-            /* align-items: center; */
-            /* justify-content: center; */
         }
         
         .projectsTitle {
@@ -781,6 +779,11 @@
             cursor: pointer;
         }
         
+        #webDevButton:hover {
+            filter: blur(3px);
+            transition: ease-in 0.2s all;
+        }
+        
         #webdesignButton {
             width: 500px;
             height: 500px;
@@ -793,10 +796,21 @@
             cursor: pointer;
         }
         
+        #webdesignButton:hover {
+            filter: blur(3px);
+            transition: ease-in 0.2s all;
+        }
+        
+        .code {
+            color: #2A324B;
+            font-size: 1em;
+            cursor: default;
+        }
+        
         .bodyModal {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 100px 1fr 1fr;
+            grid-template-rows: 50px 1fr 1fr;
             background-color: #2A324B;
         }
         
@@ -815,6 +829,48 @@
         .modal-header,
         .modal-footer {
             background-color: #EDE8E0;
+        }
+        
+        .hackatonCtn {
+            width: 100%;
+            height: 100%;
+            grid-column: 1;
+            grid-row: 1;
+            border-radius: 5px;
+        }
+        
+        #hackatonLink {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+        .hackatonImg {
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/Capture1.PNG');
+            background-size: 600px;
+            background-repeat: no-repeat;
+            object-fit: contain;
+            background-position: center;
+        }
+        
+        #textDevCtn {
+            grid-column: 1;
+            grid-row: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .textDev {
+            font-size: 0.7em;
+            color: white;
+            text-align: justify;
+            font-family: 'Roboto';
+        }
+        
+        .fa-ghost {
+            color: #FCCF00;
         }
         /* CONTACT */
         
