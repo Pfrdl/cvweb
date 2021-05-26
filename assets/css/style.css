@@ -97,7 +97,6 @@
             height: 500px;
             margin-top: 60px;
             background-color: #2A324B;
-            border-top: #EDE8E0 2px solid;
         }
         
         .dark .linkHead:hover {
@@ -812,11 +811,12 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 50px 1fr 1fr;
             background-color: #2A324B;
+            column-gap: 10px;
         }
         
         .textDisplay {
             color: white;
-            font-size: 1em;
+            font-size: 0.8em;
             text-decoration: underline white;
             text-underline-offset: o;
         }
@@ -862,15 +862,49 @@
             justify-content: center;
         }
         
+        #suburbanLink {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        
+        .suburbanImg {
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/CaptureStudio.PNG');
+            background-size: 600px;
+            background-repeat: no-repeat;
+            object-fit: contain;
+            background-position: center;
+        }
+        
+        #textSubCtn {
+            grid-column: 2;
+            grid-row: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
         .textDev {
-            font-size: 0.7em;
+            font-size: 0.6em;
             color: white;
-            text-align: justify;
             font-family: 'Roboto';
         }
         
         .fa-ghost {
-            color: #FCCF00;
+            color: #87BBA2;
+        }
+        
+        .fa-microphone-alt {
+            color: #FCA311;
+        }
+        
+        .suburbanTitle {
+            color: #FF9B00;
+        }
+        
+        .hackatonTitle {
+            color: #87BBA2;
         }
         /* CONTACT */
         
