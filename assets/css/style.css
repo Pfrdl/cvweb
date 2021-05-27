@@ -1141,3 +1141,12 @@
         .linkSocial:hover {
             color: #87BBA2;
         }
+        
+        .madeWith {
+            font-size: 0.7em;
+            grid-row: 3;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            display: flex;
+            justify-content: flex-end;
+        }
