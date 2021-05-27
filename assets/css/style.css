@@ -184,6 +184,10 @@
         .dark .linkSocial:hover {
             color: #C97064;
         }
+        
+        .dark .colorWord:hover {
+            color: #C97064;
+        }
         /* navbar */
         
         header {
