@@ -1255,6 +1255,10 @@ button.btn {
     display: none;
 }
 
+#cvResponsive {
+    display: none;
+}
+
 
 /* RESPONSIVE */
 
@@ -1265,7 +1269,7 @@ button.btn {
     #headBloc {
         display: grid;
         grid-template-columns: 15px 1fr 15px;
-        grid-template-rows: 30px 30px 90px 36px 64px 55px 333px;
+        grid-template-rows: 30px 30px 90px 36px 64px 55px 300px 30px;
     }
     #citationBloc {
         display: none;
@@ -1288,6 +1292,12 @@ button.btn {
         grid-row: 7;
         font-size: 2em;
         display: block;
+    }
+    #cvResponsive {
+        display: block;
+        grid-column: 2;
+        grid-row: 8;
+        text-align: center;
     }
     #aboutBtn {
         display: none;
