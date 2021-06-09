@@ -209,6 +209,10 @@ body {
     color: #C97064;
 }
 
+.dark #softSkillsTitle {
+    text-decoration: underline 3px solid #C97064;
+}
+
 
 /* navbar */
 
@@ -748,7 +752,7 @@ header {
 #softSkillsTitle {
     margin-top: 100px;
     font-size: 2.5em;
-    text-decoration: underline 2px solid #EDE8E0;
+    text-decoration: underline 2px solid #87BBA2;
     text-underline-offset: 4px;
 }
 
