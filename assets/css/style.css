@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #EDE8E0;
     margin: 0;
@@ -44,6 +48,7 @@ body {
 
 .dark {
     background: #2A324B;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dark #name {
