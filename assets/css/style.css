@@ -780,6 +780,31 @@ header {
     margin-top: 40px;
 }
 
+#iconeResponsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A24936;
+}
+
+.responsiveTel {
+    margin: 10px;
+    font-size: 3em;
+    color: #0F8B8D;
+}
+
+.responsiveTablet {
+    margin: 10px;
+    font-size: 4em;
+    color: #FACFAD;
+}
+
+.responsiveDesktop {
+    margin: 10px;
+    font-size: 5em;
+    color: #A8201A;
+}
+
 
 /* SKILLS HOVER & EFFECTS JS */
 
