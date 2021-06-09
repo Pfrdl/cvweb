@@ -145,6 +145,11 @@ body {
     font-size: 3em;
 }
 
+.dark #nextBtn:hover {
+    box-shadow: 0 0 0.8vw 0vw #C97064;
+    transition: all ease-in-out .3s;
+}
+
 .dark #studieWorkCtn {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -481,6 +486,11 @@ header {
     height: 125px;
     color: #EEEFF2;
     font-size: 3em;
+}
+
+#nextBtn:hover {
+    box-shadow: 0 0 0.8vw 0vw #87BBA2;
+    transition: all ease-in-out 0.3s;
 }
 
 #linkNext {
