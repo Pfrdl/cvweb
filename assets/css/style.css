@@ -159,7 +159,7 @@ body {
 
 .dark #skillsCtn {
     display: grid;
-    grid-template-columns: 1fr 100px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 950px;
     margin-top: 0 auto;
     background-color: #2A324B;
@@ -202,6 +202,10 @@ body {
 }
 
 .dark #portfolioText a:hover {
+    color: #C97064;
+}
+
+.dark .clef {
     color: #C97064;
 }
 
@@ -584,7 +588,7 @@ header {
 
 #skillsCtn {
     display: grid;
-    grid-template-columns: 1fr 100px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 1000px;
     margin-top: 0 auto;
     background-color: #2A324B;
@@ -735,18 +739,41 @@ header {
 #softSkillsCtn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-#softSkillsBtn {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: #EDE8E0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#softSkillsTitle {
+    margin-top: 100px;
+    font-size: 2.5em;
+    text-decoration: underline 2px solid #EDE8E0;
+    text-underline-offset: 4px;
+}
+
+.clef {
+    color: #87BBA2;
+}
+
+.trello {
+    color: #FF9B00;
+    font-size: 5em;
+}
+
+.github {
+    color: #C97064;
+    font-size: 5em;
+}
+
+.fa-adversal {
+    color: #BAA9BF;
+    font-size: 5em;
+}
+
+#softSkillsCtn p {
+    font-size: 1.5em;
+    margin-top: 40px;
 }
 
 
