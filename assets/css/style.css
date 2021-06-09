@@ -108,6 +108,7 @@ body {
     color: #EEEFF2;
     border-radius: 5px;
     transition: 0.3s;
+    box-shadow: 0 0 0.8vw 0vw #C97064;
 }
 
 .dark #helloColorAbout {
@@ -288,6 +289,7 @@ header {
     color: #EEEFF2;
     border-radius: 5px;
     transition: 0.3s;
+    box-shadow: 0 0 0.8vw 0vw #87BBA2;
 }
 
 
@@ -810,12 +812,12 @@ header {
 /* SKILLS HOVER & EFFECTS JS */
 
 #languagesBtn:hover,
-#technicalSkillsBtn:hover,
-#softSkillsBtn:hover {
+#technicalSkillsBtn:hover {
     width: 600px;
     height: 600px;
     transition: .5s ease-in-out all;
     font-size: 3em;
+    box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
 }
 
 .unshow {
@@ -1106,6 +1108,8 @@ button.btn {
 
 #backHomeBtn:hover {
     color: #87BBA2;
+    box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
+    transition: all ease-in-out 0.2s;
 }
 
 
@@ -1139,6 +1143,7 @@ button.btn {
     height: 300px;
     transition: 0.3s;
     font-size: 7em;
+    box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
 }
 
 .hideBtn {
@@ -1187,6 +1192,7 @@ button.btn {
     height: 300px;
     transition: 0.3s;
     font-size: 7em;
+    box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
 }
 
 
@@ -1221,6 +1227,7 @@ button.btn {
     height: 300px;
     transition: 0.3s;
     font-size: 7em;
+    box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
 }
 
 
