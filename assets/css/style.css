@@ -1073,21 +1073,8 @@ button.btn {
 
 /* TITLE CONTACT */
 
-#contactTitleContainer {
-    grid-column-start: 3;
-    display: flex;
-    justify-content: center;
-}
-
-#contactTitle {
-    color: #EEEFF2;
-    font-size: 3em;
-    background-color: #2A324B;
-    font-weight: bold;
-    margin-top: 0.2em;
-    border-radius: 5px;
-    margin-bottom: 130px;
-    padding: 0% 10px;
+#contactTitleCtn {
+    display: none;
 }
 
 
@@ -1337,16 +1324,15 @@ button.btn {
 /* RESPONSIVE */
 
 @media (max-width: 475px) {
+    /* DARK MODE  */
     #containerDarkMode {
         display: none;
     }
+    /* HEADER */
     #headBloc {
         display: grid;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-rows: 30px 30px 90px 36px 64px 55px 300px 30px;
-    }
-    #citationBloc {
-        display: none;
+        grid-template-columns: 52px 1fr 52px;
+        grid-template-rows: 35px 24px 70px 120px 85px;
     }
     #name {
         grid-column: 2;
@@ -1360,7 +1346,25 @@ button.btn {
         font-size: 2em;
         text-align: center;
     }
-    #responsiveText {
+    /* TRIANGLE HEADER */
+    #citationBloc {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        display: grid;
+        height: auto;
+        grid-template-columns: 82px 311px 82px;
+        grid-template-rows: 333px;
+        background-color: #2A324B;
+    }
+    #triangle1Display {
+        margin-left: 0%;
+        grid-column: 2;
+        grid-row: 1;
+        border-left-width: 155px;
+        border-right-width: 155px;
+        border-top: 333px solid #EDE8E0;
+    }
+    /* #responsiveText {
         text-align: center;
         grid-column: 2;
         grid-row: 7;
@@ -1372,6 +1376,256 @@ button.btn {
         grid-column: 2;
         grid-row: 8;
         text-align: center;
+    } */
+    /* ABOUT PART */
+    #aboutCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 666px;
+        width: auto;
+        margin-bottom: 0%;
+    }
+    #aboutTextTitle {
+        margin: 5% 10% 0% 10%;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+    #aboutText {
+        margin: 5% 10% 0% 10%;
+        text-align: center;
+        font-size: 2em;
+    }
+    /* CV PAPIER  */
+    #cvCtn {
+        background-color: #2A324B;
+        color: #EEEFF2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        font-size: 1em;
+        padding: 5%;
+    }
+    .cvText {
+        margin: 0%;
+        text-align: center;
+    }
+    /* STUDIE WORK PART */
+    #studieWorkCtn {
+        gap: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2A324B;
+        color: #EDE8E0;
+    }
+    #workTitle {
+        font-size: 0.8em;
+        margin-top: 0%;
+        text-decoration: underline #87BBA2;
+        text-underline-position: under;
+    }
+    #studieTitle {
+        font-size: 0.8em;
+        margin-top: 0%;
+        text-decoration: underline #87BBA2;
+    }
+    #studieCtn {
+        margin-bottom: 0%;
+    }
+    .titleBloc {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    /* skills PART */
+    #skillsCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2A324B;
+    }
+    #softSkillsCtn {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: #EEEFF2;
+    }
+    #technicalSkillsBtn {
+        margin-top: 50px;
+        width: 225px;
+        height: 225px;
+    }
+    #languagesBtn {
+        width: 225px;
+        height: 225px;
+    }
+    #languagesBtn:hover,
+    #technicalSkillsBtn:hover {
+        width: 300px;
+        height: 300px;
+        font-size: 2em;
+    }
+    .show {
+        font-size: 1.5em;
+    }
+    /* CONTACT PART */
+    #contactTitleCtn {
+        grid-column-start: 3;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #contactTitle {
+        color: #EEEFF2;
+        font-size: 3.5em;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    #contactContainer {
+        display: grid;
+        grid-template-columns: 100px 75px 125px 75px 100px;
+        grid-template-rows: 150px 120px 200px 120px 200px 120px 200px 70px 50px 40px;
+    }
+    #phoneCtn {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        display: flex;
+        justify-content: center;
+    }
+    #linkPhone {
+        text-decoration: none;
+    }
+    #phoneBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EDE8E0;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        color: #BAA9BF;
+        font-size: 4em;
+    }
+    #phoneBtn:hover {
+        width: 120px;
+        height: 120px;
+        transition: 0.3s;
+        font-size: 3em;
+        box-shadow: 0 0 3vw 0vw #4f81bd, 0 0 1vw 0vw #87BBA2;
+    }
+    .phoneNumber {
+        display: block;
+        font-size: 0.3em;
+        color: #BAA9BF;
+        font-weight: bold;
+    }
+    .madeWith {
+        font-size: 0.6em;
+        grid-row: 11;
+        grid-column: 3;
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        display: flex;
+        justify-content: center;
+    }
+    #mailCtn {
+        grid-column-start: 3;
+        grid-row-start: 4;
+        display: flex;
+        justify-content: center;
+    }
+    #mailBtn {
+        width: 120px;
+        height: 120px;
+        font-size: 4em;
+    }
+    #mailBtn:hover {
+        width: 120px;
+        height: 120px;
+        font-size: 4em;
+    }
+    #locationCtn {
+        grid-column-start: 3;
+        grid-row-start: 6;
+        display: flex;
+        justify-content: center;
+    }
+    #locationBtn {
+        width: 120px;
+        height: 120px;
+        font-size: 5em;
+        border: none;
+    }
+    #locationBtn:hover {
+        width: 120px;
+        height: 120px;
+        font-size: 5em;
+    }
+    /* triangles */
+    #triangle3Ctn {
+        grid-column-start: 1;
+        grid-row-start: 7;
+        display: block;
+    }
+    #triangle3 {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-bottom-width: 100px;
+        border-top-width: 100px;
+        border-left: 175px solid #82C0CD;
+    }
+    #triangle4Ctn {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        display: block;
+    }
+    #triangle4 {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-bottom-width: 100px;
+        border-top-width: 100px;
+        border-left: 175px solid #BAA9BF;
+    }
+    #triangle5Ctn {
+        grid-column-start: 4;
+        grid-row-start: 5;
+        display: block;
+    }
+    #triangle5 {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-top-width: 100px;
+        border-bottom-width: 100px;
+        border-right: 175px solid #87BBA2;
+    }
+    #socialCtn {
+        grid-column: 2/5;
+        grid-row-start: 9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3.5em;
+    }
+    /* DISPLAY NONE */
+    #backHomeCtn {
+        display: none;
+    }
+    #nextCtn {
+        display: none;
     }
     #aboutBtn {
         display: none;
@@ -1385,22 +1639,7 @@ button.btn {
     #contactBtn {
         display: none;
     }
-    #studieWorkCtn {
-        display: none;
-    }
-    #skillsCtn {
-        display: none;
-    }
-    #aboutCtn {
-        display: none;
-    }
     #projectCtn {
-        display: none;
-    }
-    #contactContainer {
-        display: none;
-    }
-    #cvCtn {
         display: none;
     }
 }
