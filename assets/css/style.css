@@ -1354,19 +1354,6 @@ button.btn {
     #triangle1Display {
         display: none;
     }
-    /* #responsiveText {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 7;
-        font-size: 2em;
-        display: block;
-    }
-    #cvResponsive {
-        display: block;
-        grid-column: 2;
-        grid-row: 8;
-        text-align: center;
-    } */
     /* ABOUT PART */
     #aboutCtn {
         display: flex;
