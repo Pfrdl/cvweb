@@ -1336,7 +1336,7 @@ button.btn {
 
 /* RESPONSIVE */
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
     #containerDarkMode {
         display: none;
     }
