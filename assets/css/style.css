@@ -1330,9 +1330,10 @@ button.btn {
     }
     /* HEADER */
     #headBloc {
-        display: grid;
-        grid-template-columns: 52px 1fr 52px;
-        grid-template-rows: 35px 24px 70px 120px 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     #name {
         grid-column: 2;
@@ -1348,21 +1349,10 @@ button.btn {
     }
     /* TRIANGLE HEADER */
     #citationBloc {
-        margin-top: 0%;
-        margin-bottom: 0%;
-        display: grid;
-        height: auto;
-        grid-template-columns: 82px 311px 82px;
-        grid-template-rows: 333px;
-        background-color: #2A324B;
+        display: none;
     }
     #triangle1Display {
-        margin-left: 0%;
-        grid-column: 2;
-        grid-row: 1;
-        border-left-width: 155px;
-        border-right-width: 155px;
-        border-top: 333px solid #EDE8E0;
+        display: none;
     }
     /* #responsiveText {
         text-align: center;
@@ -1492,13 +1482,13 @@ button.btn {
         border-radius: 5px;
     }
     #contactContainer {
-        display: grid;
-        grid-template-columns: 100px 75px 125px 75px 100px;
-        grid-template-rows: 150px 120px 200px 120px 200px 120px 200px 70px 50px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     #phoneCtn {
-        grid-column-start: 3;
-        grid-row-start: 2;
+        margin: 50px;
         display: flex;
         justify-content: center;
     }
@@ -1530,7 +1520,7 @@ button.btn {
         font-weight: bold;
     }
     .madeWith {
-        font-size: 0.6em;
+        font-size: 1em;
         grid-row: 11;
         grid-column: 3;
         writing-mode: horizontal-tb;
@@ -1539,8 +1529,7 @@ button.btn {
         justify-content: center;
     }
     #mailCtn {
-        grid-column-start: 3;
-        grid-row-start: 4;
+        margin: 50px;
         display: flex;
         justify-content: center;
     }
@@ -1555,8 +1544,7 @@ button.btn {
         font-size: 4em;
     }
     #locationCtn {
-        grid-column-start: 3;
-        grid-row-start: 6;
+        margin: 50px;
         display: flex;
         justify-content: center;
     }
@@ -1572,55 +1560,25 @@ button.btn {
         font-size: 5em;
     }
     /* triangles */
-    #triangle3Ctn {
-        grid-column-start: 1;
-        grid-row-start: 7;
-        display: block;
-    }
-    #triangle3 {
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-bottom-width: 100px;
-        border-top-width: 100px;
-        border-left: 175px solid #82C0CD;
-    }
-    #triangle4Ctn {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        display: block;
-    }
-    #triangle4 {
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-bottom-width: 100px;
-        border-top-width: 100px;
-        border-left: 175px solid #BAA9BF;
-    }
-    #triangle5Ctn {
-        grid-column-start: 4;
-        grid-row-start: 5;
-        display: block;
-    }
-    #triangle5 {
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-top-width: 100px;
-        border-bottom-width: 100px;
-        border-right: 175px solid #87BBA2;
-    }
     #socialCtn {
-        grid-column: 2/5;
-        grid-row-start: 9;
+        width: 100%;
+        margin: 50px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 3.5em;
     }
     /* DISPLAY NONE */
+    #triangle3Ctn {
+        display: none;
+    }
+    #triangle4Ctn {
+        display: none;
+    }
+    #triangle5Ctn {
+        display: none;
+    }
     #backHomeCtn {
         display: none;
     }
