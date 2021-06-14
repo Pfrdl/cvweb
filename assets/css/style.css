@@ -1039,6 +1039,10 @@ button.btn {
     justify-content: center;
 }
 
+.whiskysTitle {
+    color: #A8201A;
+}
+
 .textDev {
     font-size: 0.5em;
     color: white;
