@@ -151,15 +151,6 @@ $(document).ready(function() {
 
     })
 
-    // SOFT SKILLS
-
-
-
-
-
-
-
-
 
 
 
@@ -196,7 +187,26 @@ $(document).ready(function() {
 
     })
 
+    // responsive Menu
 
+    function showResponsiveMenu() {
+
+        let menu = document.getElementById("topnavResponsiveMenu");
+        let icon = document.getElementById("hamburgerIcon");
+        let root = document.getElementById("root");
+        if (menu.className === "") {
+            menu.className = "open";
+            icon.className = "open";
+            root.style.overflowY = "hidden";
+        } else {
+            menu.className = "";
+            icon.className = "";
+            root.style.overflowY = "";
+        }
+
+
+
+    }
 
 
 
