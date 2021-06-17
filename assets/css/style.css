@@ -224,6 +224,43 @@ body {
     text-decoration: underline 3px solid #C97064;
 }
 
+.dark .btn1 {
+    background-color: transparent;
+    border: 2px solid #EDE8E0;
+    border-radius: 5px;
+    padding: 20px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EDE8E0;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.dark .btn1::before {
+    content: "";
+    position: absolute;
+    background-color: #EDE8E0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: all ease-in-out 0.5s;
+    z-index: -1;
+}
+
+.dark .btn1:hover {
+    z-index: 1;
+    color: #2A324B;
+}
+
+.dark .btn1:hover::before {
+    width: 100%;
+}
+
 
 /* navbar */
 
@@ -1076,18 +1113,47 @@ button.btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #2A324B;
+    flex-direction: column;
     font-size: 1.3em;
     margin-bottom: 15px;
-}
-
-#portfolioText a {
-    text-decoration: none;
     color: #2A324B;
 }
 
-#portfolioText a:hover {
-    color: #87BBA2;
+.btn1 {
+    background-color: transparent;
+    border: 2px solid #2A324B;
+    border-radius: 5px;
+    padding: 20px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2A324B;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    background-color: #2A324B;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: all ease-in-out 0.5s;
+    z-index: -1;
+}
+
+.btn1:hover {
+    z-index: 1;
+    color: #EDE8E0;
+}
+
+.btn1:hover::before {
+    width: 100%;
 }
 
 
