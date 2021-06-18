@@ -1713,8 +1713,8 @@ button.btn {
     /* MENU CIRCULAIRE */
     .ctnMenu {
         display: block;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         transform: translate(0%, 0%);
     }
     .ctnMenu.active .ligne::before {
