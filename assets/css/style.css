@@ -666,7 +666,6 @@ header {
 }
 
 #skillsTitle {
-    border-radius: 5px;
     color: #EEEFF2;
     font-size: 4em;
     font-weight: bold;
@@ -1428,13 +1427,22 @@ button.btn {
 
 /* RESPONSIVE */
 
-@media (max-width: 475px) {
+@media (max-width: 770px) {
     /* DARK MODE  */
-    #darkModeBtn {
-        display: none;
+    #darkMode {
+        margin-right: 25px;
+        font-size: 1.5em;
+        color: #87BBA2;
+        cursor: pointer;
     }
     /* HEADER */
     #headBloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dark #headBloc {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1444,6 +1452,18 @@ button.btn {
         grid-column: 2;
         grid-row: 3;
         font-size: 2.7em;
+        text-align: center;
+    }
+    .dark #name {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 2.7em;
+        text-align: center;
+    }
+    .dark #subtitle {
+        grid-column: 2;
+        grid-row: 4;
+        font-size: 2em;
         text-align: center;
     }
     #subtitle {
@@ -1461,11 +1481,26 @@ button.btn {
         align-items: center;
         justify-content: center;
     }
+    .dark #citationBloc {
+        margin-top: 0px;
+        background-color: #2A324B;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+    }
     #triangle1Display {
         display: none;
     }
     /* ABOUT PART */
     #aboutCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .dark #aboutCtn {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1507,7 +1542,25 @@ button.btn {
         background-color: #2A324B;
         color: #EDE8E0;
     }
+    .dark #studieWorkCtn {
+        gap: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2A324B;
+        color: #EDE8E0;
+    }
     #workCtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .dark #workCtn {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1522,12 +1575,31 @@ button.btn {
         text-decoration: underline #87BBA2;
         text-underline-position: under;
     }
+    .dark #workTitle {
+        font-size: 0.7em;
+        margin-top: 0%;
+        text-decoration: underline #C97064;
+        text-underline-position: under;
+    }
     #studieTitle {
         font-size: 0.7em;
         margin-top: 0%;
         text-decoration: underline #87BBA2;
     }
+    .dark #studieTitle {
+        font-size: 0.7em;
+        margin-top: 0%;
+        text-decoration: underline #C97064;
+    }
     #studieCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15%;
+        text-align: center;
+    }
+    .dark #studieCtn {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1547,7 +1619,31 @@ button.btn {
         justify-content: center;
         background-color: #2A324B;
     }
+    .dark #skillsCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2A324B;
+    }
+    .dark #skillsTitle {
+        color: #C97064;
+        font-size: 4em;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
     #softSkillsCtn {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: #EEEFF2;
+    }
+    .dark #softSkillsCtn {
         margin-top: 50px;
         margin-bottom: 100px;
         display: flex;
@@ -1563,7 +1659,16 @@ button.btn {
         width: 225px;
         height: 225px;
     }
+    .dark #technicalSkillsBtn {
+        margin-top: 50px;
+        width: 225px;
+        height: 225px;
+    }
     #languagesBtn {
+        width: 225px;
+        height: 225px;
+    }
+    .dark #languagesBtn {
         width: 225px;
         height: 225px;
     }
@@ -1590,6 +1695,9 @@ button.btn {
         font-size: 3.5em;
         font-weight: bold;
         border-radius: 5px;
+    }
+    .dark #contactTitle {
+        color: #C97064;
     }
     #contactContainer {
         display: flex;
@@ -1708,6 +1816,9 @@ button.btn {
         display: none;
     }
     #projectCtn {
+        display: none;
+    }
+    .dark #projectCtn {
         display: none;
     }
     /* MENU CIRCULAIRE */
