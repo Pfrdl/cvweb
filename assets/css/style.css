@@ -1469,9 +1469,8 @@ button.btn {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 666px;
+        height: auto;
         width: auto;
-        margin-bottom: 0%;
     }
     #aboutTextTitle {
         margin: 5% 10% 0% 10%;
@@ -1493,7 +1492,6 @@ button.btn {
         justify-content: center;
         grid-template-columns: 1fr;
         font-size: 1em;
-        padding: 5%;
     }
     .cvText {
         margin: 0%;
@@ -1732,7 +1730,7 @@ button.btn {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background: #f1f1f1;
+        background: #EDE8E0;
         position: absolute;
         top: 50%;
         left: 50%;
