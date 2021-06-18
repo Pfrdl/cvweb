@@ -1817,3 +1817,10 @@ button.btn {
         top: 0%;
     }
 }
+
+@media (max-width: 320px) {
+    .ctnMenu {
+        width: 200px;
+        height: 200px;
+    }
+}
