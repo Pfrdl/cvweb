@@ -1428,6 +1428,9 @@ button.btn {
 /* RESPONSIVE */
 
 @media (max-width: 770px) {
+    html {
+        scroll-behavior: smooth;
+    }
     /* DARK MODE  */
     #darkMode {
         margin-right: 25px;
