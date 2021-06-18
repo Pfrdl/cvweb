@@ -2,8 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
+*,
+ ::before,
+ ::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,30 +21,31 @@ body {
 
 /* Darkmode CTN*/
 
-#containerDarkMode {
-    display: flex;
-    justify-content: flex-end;
-    height: 50px;
-}
-
 #darkModeBtn {
-    margin-right: 25px;
-    margin-top: 25px;
-}
-
-#linkDarkMode {
-    display: inline;
-    font-size: 2em;
-    margin-right: 25px;
-    margin-top: 25px;
-    text-decoration: none;
-    color: #87BBA2;
+    position: fixed;
+    width: 100%;
+    left: 49%;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #linkDarkMode:hover {
     text-decoration: none;
     color: #C97064;
     transition: 0.3s;
+}
+
+#darkMode {
+    margin-right: 25px;
+    font-size: 2.1em;
+    color: #87BBA2;
+    cursor: pointer;
+}
+
+#darkMode:hover {
+    color: #C97064;
 }
 
 
@@ -108,7 +113,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 250px;
     height: 500px;
-    margin-top: 60px;
+    margin-top: 100px;
     background-color: #2A324B;
 }
 
@@ -175,7 +180,7 @@ body {
 .dark #skillsCtn {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 950px;
+    grid-template-rows: 80px 1000px;
     margin-top: 0 auto;
     background-color: #2A324B;
 }
@@ -270,7 +275,7 @@ header {
     height: 300px;
     color: #2A324B;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #headBloc {
@@ -347,7 +352,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 250px;
     height: 500px;
-    margin-top: 60px;
+    margin-top: 100px;
     background-color: #2A324B;
 }
 
@@ -570,7 +575,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    grid-template-rows: 1080px;
+    grid-template-rows: 1000px;
     background-color: #EDE8E0;
     color: #2A324B;
 }
@@ -1416,12 +1421,16 @@ button.btn {
     display: none;
 }
 
+.ctnMenu {
+    display: none;
+}
+
 
 /* RESPONSIVE */
 
 @media (max-width: 475px) {
     /* DARK MODE  */
-    #containerDarkMode {
+    #darkModeBtn {
         display: none;
     }
     /* HEADER */
@@ -1445,7 +1454,12 @@ button.btn {
     }
     /* TRIANGLE HEADER */
     #citationBloc {
-        display: none;
+        margin-top: 0px;
+        background-color: #2A324B;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
     }
     #triangle1Display {
         display: none;
@@ -1698,5 +1712,110 @@ button.btn {
     #projectCtn {
         display: none;
     }
-    /* MENU BURGUER */
+    /* MENU CIRCULAIRE */
+    .ctnMenu {
+        display: block;
+        width: 300px;
+        height: 300px;
+        transform: translate(0%, 0%);
+    }
+    .ctnMenu.active .ligne::before {
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .ctnMenu.active .ligne {
+        background: transparent;
+    }
+    .ctnMenu.active .ligne::after {
+        transform: translateY(-10px) rotate(45deg);
+    }
+    .btnMenu {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        cursor: pointer;
+    }
+    .ligne {
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        background: #333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.1s ease-in-out;
+    }
+    .ligne::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        background: #333;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+    }
+    .ligne::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        background: #333;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+    }
+    .icone {
+        width: 40px;
+    }
+    .blob {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blob1 {
+        background: #e0fefe;
+        transition: all 0.2s 0.1s ease-in-out;
+    }
+    .blob2 {
+        background: #c7ceea;
+        transition: all 0.2s 0.2s ease-in-out;
+    }
+    .blob3 {
+        background: #ffdac1;
+        transition: all 0.2s 0.3s ease-in-out;
+    }
+    .blob4 {
+        background: #ff9aa2;
+        transition: all 0.2s 0.4s ease-in-out;
+    }
+    /* animation */
+    .ctnMenu.active .blob1 {
+        left: 100%;
+    }
+    .ctnMenu.active .blob2 {
+        top: 100%;
+    }
+    .ctnMenu.active .blob3 {
+        left: 0%;
+        top: 50%;
+    }
+    .ctnMenu.active .blob4 {
+        left: 50%;
+        top: 0%;
+    }
 }

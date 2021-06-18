@@ -208,6 +208,17 @@ $(document).ready(function() {
 
     }
 
+    let containerMenu = document.querySelector('.ctnMenu');
+    let btnMenu = document.querySelector('.btnMenu');
+
+
+    btnMenu.addEventListener('click', () => {
+
+        containerMenu.classList.toggle('active');
+
+
+    })
+
 
 
 
