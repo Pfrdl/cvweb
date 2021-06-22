@@ -188,7 +188,7 @@ body {
 .dark #projectCtn {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 950px;
+    grid-template-rows: 80px 1000px;
     background-color: #2A324B;
 }
 
