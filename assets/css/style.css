@@ -289,10 +289,11 @@ header {
 #name {
     grid-column-start: 1;
     grid-column-end: span 2;
-    font-size: 4em;
+    font-size: 4.4em;
     font-weight: bold;
     margin: 0%;
     padding: 0%;
+    letter-spacing: 0.2em;
 }
 
 #subtitle {
