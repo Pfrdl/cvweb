@@ -232,9 +232,10 @@ body {
 .dark .btn1 {
     background-color: transparent;
     border: 2px solid #EDE8E0;
-    border-radius: 5px;
-    padding: 20px 40px;
-    font-size: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 1.5em;
     text-transform: uppercase;
     color: #EDE8E0;
     cursor: pointer;
@@ -1130,17 +1131,18 @@ button.btn {
 .btn1 {
     background-color: transparent;
     border: 2px solid #2A324B;
-    border-radius: 5px;
-    padding: 20px 40px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
     font-size: 20px;
     text-transform: uppercase;
     color: #2A324B;
     cursor: pointer;
     transition: all 0.5s;
-    font-weight: bold;
     position: relative;
     overflow: hidden;
     margin: 10px;
+    font-size: 1.5em;
 }
 
 .btn1::before {
