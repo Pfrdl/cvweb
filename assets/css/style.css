@@ -571,6 +571,10 @@ header {
 
 /* FIN EFFETS JS */
 
+#studieWorkCtn a {
+    text-decoration: none;
+}
+
 #studieWorkCtn {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1042,7 +1046,7 @@ button.btn {
 .hackatonImg {
     width: 100%;
     height: 100%;
-    background-image: url('../img/Capture1.PNG');
+    background-image: url('../img/PacMan.png');
     background-size: 600px;
     background-repeat: no-repeat;
     object-fit: contain;
