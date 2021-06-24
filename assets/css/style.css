@@ -130,6 +130,11 @@ body {
     font-size: 1.3em;
 }
 
+.dark #aboutText a {
+    text-decoration: none;
+    color: #C97064;
+}
+
 .dark .colorWord {
     color: #C97064;
 }
@@ -492,6 +497,11 @@ header {
     margin: 5% 10% 0% 10%;
     text-align: center;
     font-size: 3.5em;
+}
+
+#aboutText a {
+    text-decoration: none;
+    color: #87BBA2;
 }
 
 #cvCtn {
