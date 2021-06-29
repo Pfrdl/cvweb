@@ -1010,6 +1010,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius: 10px;
     }
     
     #IsaacSubCtn {
@@ -1025,6 +1026,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius: 10px;
     }
     
     #textDevCtn {
@@ -1047,6 +1049,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius: 10px;
     }
     
     #textSubCtn {
@@ -1096,6 +1099,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 10px;
     }
     
     .ralewayImg {
@@ -1105,6 +1109,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 10px;
     }
     
     #portfolioLinkCtn {
