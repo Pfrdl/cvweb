@@ -121,7 +121,7 @@
         left: 50%;
         transform: translateX(-50%) scaleX(0);
         height: 2px;
-        width: 100%;
+        width: 95%;
         transition: transform 0.4s ease;
         background: #C97064;
     }
@@ -354,7 +354,7 @@
         left: 50%;
         transform: translateX(-50%) scaleX(0);
         height: 2px;
-        width: 100%;
+        width: 95%;
         transition: transform 0.4s ease;
         background: #87BBA2;
     }
