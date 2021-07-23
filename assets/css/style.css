@@ -199,22 +199,6 @@
         background-color: #2A324B;
     }
     
-    .dark #projectCtn {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 80px 1000px;
-        background-color: #2A324B;
-    }
-    
-    .dark #projectTitleCtn {
-        color: white;
-    }
-    
-    .dark .projectsTitle {
-        color: white;
-        text-decoration: underline #C97064;
-    }
-    
     .dark #backHomeBtn:hover {
         color: #C97064;
     }
@@ -592,8 +576,8 @@
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         grid-template-rows: 1000px;
-        background-color: #EDE8E0;
-        color: #2A324B;
+        background-color: #2A324B;
+        color: #EDE8E0;
     }
     
     #studieCtn {
@@ -615,7 +599,7 @@
     #studieTitle {
         font-size: 1em;
         margin-top: 0%;
-        text-decoration: underline #2A324B;
+        text-decoration: underline #87BBA2;
         text-underline-position: under;
     }
     
@@ -649,7 +633,7 @@
     #workTitle {
         font-size: 1em;
         margin-top: 0%;
-        text-decoration: underline #2A324B;
+        text-decoration: underline #87BBA2;
         text-underline-position: under;
     }
     
@@ -882,320 +866,6 @@
         display: block;
         font-size: 2.2em;
         cursor: pointer;
-    }
-    /* PROJETCS */
-    
-    #projectCtn {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 80px 1000px;
-        background-color: #EDE8E0;
-    }
-    
-    #projectTitleCtn {
-        margin-top: 20px;
-        grid-column: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #2A324B;
-    }
-    
-    #projectTitle {
-        border-radius: 5px;
-        font-size: 4em;
-        font-weight: bold;
-        padding: 5px 10px;
-    }
-    
-    #projectCardsCtn {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr;
-        grid-column: 1/4;
-        grid-row: 2;
-    }
-    
-    .projectCtnDisplay {
-        grid-row: 2;
-        display: flex;
-    }
-    
-    .projectsTitle {
-        grid-row: 1;
-        grid-column: 1;
-        font-size: 2em;
-        color: #2A324B;
-        text-decoration: underline #87BBA2;
-        text-underline-position: under;
-    }
-    
-    .displayCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #webDevButton {
-        width: 500px;
-        height: 500px;
-        border-radius: 50%;
-        background-image: url("../img/webDev.jpg");
-        border: 2px solid white;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
-    
-    #webDevButton:hover {
-        filter: blur(3px);
-        transition: ease-in 0.2s all;
-    }
-    
-    #webdesignButton {
-        width: 500px;
-        height: 500px;
-        border-radius: 50%;
-        background-image: url("../img/pexels-picjumbocom-196644.jpg");
-        background-position: center;
-        border: 2px solid white;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
-    
-    #webdesignButton:hover {
-        filter: blur(3px);
-        transition: ease-in 0.2s all;
-    }
-    
-    .code {
-        color: #2A324B;
-        font-size: 1em;
-        cursor: default;
-    }
-    
-    .bodyModal {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 1fr 1fr;
-        background-color: #2A324B;
-        column-gap: 10px;
-    }
-    
-    .textDisplay {
-        color: white;
-        font-size: 0.8em;
-        text-decoration: underline white;
-        text-underline-offset: o;
-    }
-    
-    .modal-title {
-        font-size: 1.5em;
-        color: #2A324B;
-    }
-    
-    .modal-header,
-    .modal-footer {
-        background-color: #EDE8E0;
-    }
-    
-    .hackatonCtn {
-        width: 100%;
-        height: 100%;
-        grid-column: 1;
-        grid-row: 1;
-        border-radius: 5px;
-    }
-    
-    button.btn {
-        background-color: #2A324B;
-    }
-    
-    #hackatonLink {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    #IsaacLink {
-        grid-column: 3;
-        grid-row: 2;
-    }
-    
-    .isaacImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/Isaac.PNG');
-        background-size: 600px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-    
-    #IsaacSubCtn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .hackatonImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/PacMan.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-    
-    #textDevCtn {
-        grid-column: 1;
-        grid-row: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #suburbanLink {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    .suburbanImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/CaptureStudio.PNG');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-    
-    #textSubCtn {
-        grid-column: 2;
-        grid-row: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .whiskysTitle {
-        color: #A8201A;
-    }
-    
-    .textDev {
-        font-size: 0.5em;
-        color: white;
-        font-family: 'Roboto';
-        text-align: justify;
-    }
-    
-    .fa-glass-whiskey {
-        color: #A8201A;
-    }
-    
-    .fa-ghost {
-        color: #87BBA2;
-    }
-    
-    .fa-microphone-alt {
-        color: #FCA311;
-    }
-    
-    .suburbanTitle {
-        color: #FF9B00;
-    }
-    
-    .hackatonTitle {
-        color: #87BBA2;
-    }
-    /* WEBDESIGN MODAL */
-    
-    .smartImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/smartHouse.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-    }
-    
-    .ralewayImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/ralewaystudio.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-    }
-    
-    .aquascopImg {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/LANDINGPAGE\ MAQUETTE\ GRAPHIQUE.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-    
-    .textDev a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    #portfolioLinkCtn {
-        grid-column: 2;
-        grid-row: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 1.3em;
-        margin-bottom: 15px;
-        color: #2A324B;
-    }
-    
-    .btn1 {
-        background-color: transparent;
-        border: 2px solid #2A324B;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #2A324B;
-        cursor: pointer;
-        transition: all 0.5s;
-        position: relative;
-        overflow: hidden;
-        margin: 10px;
-        font-size: 1.5em;
-    }
-    
-    .btn1::before {
-        content: "";
-        position: absolute;
-        background-color: #2A324B;
-        height: 100%;
-        top: 0;
-        left: 0;
-        width: 0%;
-        transition: all ease-in-out 0.5s;
-        z-index: -1;
-    }
-    
-    .btn1:hover {
-        z-index: 1;
-        color: #EDE8E0;
-    }
-    
-    .btn1:hover::before {
-        width: 100%;
     }
     /* CONTACT */
     
